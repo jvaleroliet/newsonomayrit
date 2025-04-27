@@ -1,0 +1,203 @@
+@import 'node_modules/vanilla-infinite-marquee/infinite-marquee.css'; 
+
+@font-face {
+  font-family:'suisse';
+  src: url('../src/Fonts/SuisseBPIntl-Regular.otf'); 
+}
+
+@font-face {
+  font-family:'suisseMed';
+  src: url('../src/Fonts/SuisseIntl-Medium.otf'); 
+}
+
+@font-face {
+  font-family:'neureal';
+  src: url('../src/Fonts/NeurealTrial-Regular.otf'); 
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'suisse', sans-serif;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   /* background-color: black; Fondo negro */
+
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Images/Fondo.jpg');
+  background-size: min(300vw, 300vh);
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+   /* opacity: 0.3; */
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .background {
+      background-size: cover; /* Cambia de cover a contain en móviles si es necesario */
+  }
+}
+
+.menu {
+  font-family: 'neureal' !important;
+  font-size: 2vw;
+  position: fixed;
+  top: 0%;
+  display: grid;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  line-height: 95%;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+  filter: blur(5px);
+}
+
+
+/* Ventana modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  color: rgb(255, 255, 255);
+  max-width: 1000px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.modal-content p {
+  font-family: 'neureal' !important;
+  font-size: 28px;
+  line-height: 96%;
+}
+.modal-content h1 {
+  font-size: 12px;
+  padding-bottom: 12px ;
+  }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Estilos de los proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.project {
+  background: white;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+swiper-container {
+  width: 100%;
+  top: 0;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+:root {
+  --swiper-pagination-color: #ffffff; /* Color de los bullets activos */
+  --swiper-pagination-bullet-inactive-color: #b7b7b770; /* Color de los bullets inactivos */
+  --swiper-pagination-bullet-inactive-opacity: 0.5; /* Opacidad de los inactivos */
+  --swiper-pagination-bullet-size: 6px; /* Tamaño de los bullets */
+  --swiper-pagination-bullet-horizontal-gap: 3px; /* Espacio entre bullets */
+}
+
+/* MARQUEE */
+.marquee-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Contenedor del marquee */
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos del texto del marquee */
+.marquee-container a {
+  font-family: 'neureal', sans-serif; 
+  font-size: 18px; 
+  font-weight: bold;
+  color: white; 
+  padding: 0 20px; 
+  text-decoration: none;
+}  

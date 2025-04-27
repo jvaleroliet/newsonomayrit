@@ -5,6 +5,14 @@ module.exports = {
   theme: {
     fontFamily: {
       trajan: ["trajan-pro", "sans-serif"],
+      sans: ['sans-serif'], 
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     extend: {
       animation: {
@@ -19,6 +27,7 @@ module.exports = {
     },
     colors: {
       transparent: "transparent",
+      bisque: '#ffe4c4',
       current: "currentColor",
       gray: colors.neutral,
       black: colors.black,

@@ -1,5 +1,21 @@
 locale                   : "en"
-title                    : "Site Name"
+title                    : "Sono Mayrit"
+author: "SM"
+description: ""
+url: "http://sonomayrit.xyz"
+baseurl: ""
+lang: "es"
+
+excerpt_separator: <!--more-->
+plugins: [jekyll-paginate]
+
+markdown: kramdown
+kramdown:
+  header_offset: 1
+
+permalink: /:year/:month/:day/:title/
+paginate_pathds: /:num/
+paginate: 5
 
 collections:
   press:
@@ -16,6 +32,16 @@ exclude:
  - tailwind.config.js
  - .nova
  
-permalink: pretty
 
 future: true
+
+collections:
+  projects:
+    output: true
+
+
+
+picture:
+  source: "assets/images"
+  output: "assets/images/generated"
+  suppress_warnings: true

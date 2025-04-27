@@ -1,6 +1,6 @@
 ---
 layout: home
-title: home
+title: projects
 ---
 
 <!DOCTYPE html>
@@ -21,12 +21,11 @@ title: home
     <div class="background"></div>
     <!-- Menú de navegación -->
     <nav class="menu">
-            <a href="{{ site.baseurl }}/index">SONO MAYRIT</a>
-            <a href="{{ site.baseurl }}/projects">PROJECTS</a>
-            <a href="#" onclick="openModal(event)">ABOUT</a>
+        <a href="{{ site.baseurl }}/index">SONO MAYRIT</a>
+        <a href="{{ site.baseurl }}/projects">PROJECTS</a>
+        <a href="#" onclick="openModal(event)">ABOUT</a>
     </nav>
 
-  
     
     <!-- Ventana modal INFO -->
     <div class="modal-overlay" id="modal" onclick="closeModal(event)">
@@ -36,7 +35,7 @@ title: home
         </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- FOOTER-->
     <footer class="marquee-footer">
         <div class="marquee-container">
             <a href="https://www.instagram.com/sonomayrit/" target="_blank" rel="noopener noreferrer">@sonomayrit</a>
@@ -45,22 +44,50 @@ title: home
         </div>
     </footer>
 
+    <!-- Swipper PROYECTOS -->
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="10" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-slide>
+        <a href="template.html"><img src="{{ "src/Images/Proyectos/01.png" | relative_url }}"/></a>
+    </swiper-slide>
+    <swiper-slide>
+        <a href="https://sonomayrit.xyz/projects/"><img src="{{ "src/Images/Proyectos/02.png" | relative_url }}" /></a>
+    </swiper-slide>
+    <swiper-slide>
+        <a href="https://sonomayrit.xyz/projects/"><img src="{{ "src/Images/Proyectos/03.png" | relative_url }}" /></a>
+    </swiper-slide>
+    <swiper-slide>
+        <a href="https://sonomayrit.xyz/projects/"><img src="{{ "src/Images/Proyectos/04.png" | relative_url }}" /></a>
+    </swiper-slide>
+    <swiper-slide>
+        <a href="https://sonomayrit.xyz/projects/"><img src="{{ "src/Images/Proyectos/05.png" | relative_url }}" /></a>
+    </swiper-slide>
+    <swiper-slide>
+        <a href="https://sonomayrit.xyz/projects/"><img src="{{ "src/Images/Proyectos/06.png" | relative_url }}" /></a>
+    </swiper-slide>
+    <swiper-slide>
+        <a href="https://sonomayrit.xyz/projects/"><img src="{{ "src/Images/Proyectos/07.png" | relative_url }}" /></a>
+    </swiper-slide>
+    <swiper-slide>
+        <a href="https://sonomayrit.xyz/projects/"><img src="{{ "src/Images/Proyectos/08.png" | relative_url }}" /></a>
+    </swiper-slide>
 
+    </swiper-container>
     <script>
-       // Abrir y cerrar la ventana modal
-        function openModal(event) {
-            event.preventDefault();
-            document.getElementById('modal').classList.add('active');
+    function openModal(event) {
+        event.preventDefault();
+        document.getElementById('modal').classList.add('active');
+    }
+    
+    function closeModal(event) {
+        const modal = document.getElementById('modal');
+        if (event.target === modal || event.target.tagName === 'BUTTON') {
+            modal.classList.remove('active');
         }
+    }
 
-        function closeModal(event) {
-            const modal = document.getElementById('modal');
-            if (event.target === modal || event.target.tagName === 'BUTTON') {
-                modal.classList.remove('active');
-            }
-        }
-
-        new InfiniteMarquee({
+    new InfiniteMarquee({
     element: '.marquee-container',
     speed: 25000,
     smoothEdges: true,
@@ -82,6 +109,6 @@ title: home
         }
     }
 });
-    </script>
+</script>
 </body>
 </html>
