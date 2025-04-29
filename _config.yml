@@ -36,12 +36,12 @@ exclude:
 future: true
 
 collections:
-  projects:
+  radio:
     output: true
 
 
 
 picture:
-  source: "assets/images"
-  output: "assets/images/generated"
+  source: "src/Images"
+  output: "src/Images/generated"
   suppress_warnings: true

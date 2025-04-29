@@ -201,3 +201,26 @@ swiper-slide img {
   padding: 0 20px; 
   text-decoration: none;
 }  
+
+/* player */
+.minimal-audio-player {
+  position: fixed; /* To keep it in the viewport even when scrolling */
+  top: 10px;      /* Adjust as needed for vertical positioning */
+  right: 10px;    /* Adjust as needed for horizontal positioning */
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: a subtle background */
+  border-radius: 5px; /* Optional: rounded corners */
+  padding: 5px;
+  z-index: 1000; /* To ensure it's above other elements */
+}
+
+#play-pause-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8em; /* Adjust the size of the button text/icon */
+  padding: 5px 10px;
+}
+
+/* You can add more styles to customize the appearance further */

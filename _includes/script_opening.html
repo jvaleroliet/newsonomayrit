@@ -1,0 +1,38 @@
+
+<script>
+    // Abrir y cerrar la ventana modal
+     function openModal(event) {
+         event.preventDefault();
+         document.getElementById('modal').classList.add('active');
+     }
+
+     function closeModal(event) {
+         const modal = document.getElementById('modal');
+         if (event.target === modal || event.target.tagName === 'BUTTON') {
+             modal.classList.remove('active');
+         }
+     }
+
+     new InfiniteMarquee({
+ element: '.marquee-container',
+ speed: 25000,
+ smoothEdges: true,
+ direction: 'left',
+ gap: '100px',
+ pauseOnHover: 'false',
+ duplicateCount: 2,
+ mobileSettings: {
+     direction: 'top',
+     speed: 20000
+ },
+ on: {
+     beforeInit: () => {
+         console.log('Not Yet Initialized');
+     },
+
+     afterInit: () => {
+         console.log('Initialized');
+     }
+ }
+});
+ </script>

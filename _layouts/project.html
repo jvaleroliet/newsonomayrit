@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sono Mayrit</title>
+    <link href="{{ "/css/styles.css" | relative_url }}" rel="stylesheet">
+    <script src="{{ "/source/main_script.js" | relative_url }}"></script>
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.bundle.js"></script>
+</head>
+
+  <body>
+	
+	{% include nav.html %}
+
+	{% include menu.html %}
+
+	{{ content }}
+	
+	{% include footer.html %}
+
+	{% include script_opening.html %}
+
+
+  </body>
+</html>
