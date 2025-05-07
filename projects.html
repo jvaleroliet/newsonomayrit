@@ -9,7 +9,7 @@ title: projects
     slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="10" coverflow-effect-depth="100"
     coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
 
-    {% assign sortedPosts = site.radio | sort: 'permalink' | reverse %}
+    {% assign sortedPosts = site.projects | sort: 'permalink' | reverse %}
         {% for project in sortedPosts %}
             <swiper-slide>
                 <a href="{{ site.baseurl }}/template">{% picture jpt-webp  "{{ project.picture }}" 1:1 --link {{ project.url }} %}</a>
