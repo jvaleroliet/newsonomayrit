@@ -1,7 +1,7 @@
 ---
 layout: project 
 title: Residency
-class: radio
+class: project
 institution: Radio Flouka
 location-year: Paris, 2023 - 2024
 artists: Sono Mayrit

@@ -1,7 +1,7 @@
 ---
 layout: project 
 title: Music After Al-Andalous
-class: live
+class: project
 institution:  migas
 location-year: Berlin, 2024
 artists: Sono Mayrit

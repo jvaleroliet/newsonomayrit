@@ -1,7 +1,7 @@
 ---
 layout: project 
 title: Tetuan, Tetuán, تطوان
-class: other
+class: project
 institution:  Music research & curation w/ Disco Atlas
 location-year: Madrid, 2023
 artists: Adrian Schilnder

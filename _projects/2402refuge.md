@@ -1,7 +1,7 @@
 ---
 layout: project 
 title: From Fusion to Roots
-class: radio
+class: project
 institution: Refuge Worldwide
 location-year: Berlin, 2024
 artists: Sono Mayrit
