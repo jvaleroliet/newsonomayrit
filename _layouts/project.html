@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sono Mayrit</title>
-    <link href="{{ "/css/styles.css" | relative_url }}" rel="stylesheet">
+    <link href="{{ "/css/style_project.css" | relative_url }}" rel="stylesheet">
     <script src="{{ "/source/main_script.js" | relative_url }}"></script>
     <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
@@ -17,18 +17,19 @@
 	{% include nav.html %}
 
 	{% include menu.html %}
+    <div class="project-content-wrapper">
+        <div class="project-page">
+            <!-- Header Section -->
+            <div class="project-header">
+                <h1>{{ page.title }}</h1>
+            </div>
 
-    <div class="project-page">
-        <!-- Header Section -->
-        <div class="project-header">
-            <h1>projects.title</h1>
+            <!-- Main Content Section -->
+            <div class="project-content">
+                {{ content }}
+            </div>
+
         </div>
-
-        <!-- Main Content Section -->
-        <div class="project-content">
-            {{ content }}
-        </div>
-
     </div>
 	
 	{% include footer.html %}
