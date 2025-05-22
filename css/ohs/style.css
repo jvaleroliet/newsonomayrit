@@ -83,7 +83,7 @@ p:first-of-type { text-indent: 0; }
   100% { opacity: .5;}
 }
 
-image {
+img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
