@@ -79,16 +79,18 @@ p:first-of-type { text-indent: 0; }
 .media.playing strong {
   animation: playing_anim 500ms linear infinite alternate;
 }
-@keyframes playing_anim {
-  100% { opacity: .5;}
-}
 
 img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  max-width: 55ch; /* Match the paragraph width */
   align-self: center;
   padding-top: 2vw;
-  padding-bottom:2vw;
+  padding-bottom: 2vw;
 }
+
+@keyframes playing_anim {
+  100% { opacity: .5;}
+}
+
