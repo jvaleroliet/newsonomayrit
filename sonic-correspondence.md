@@ -29,17 +29,21 @@ genre blend — but rather a research-driven sound practice focused on the timbr
 textures, and evolutions of traditional instruments, presented in back-to-back DJ sets using
 field recordings and archival materials.
 
+
 Through active listening and deep digging, the project surfaces rural and ceremonial soundscapes
 where similar instruments — such as the bendir and pandero, ghayta and gaita, ribab and
 rabel — have developed in parallel yet distinct cultural contexts. The focus is not only on
 similarity, but also on difference, and how each tradition evolved its own sonic identity.
+
 
 ## Keywords
 Traditional instruments, Field recordings, Rural soundscapes, Cultural memory,
 Instrumental heritage, Sonic archaeology, Common roots, Personal perspective, Folk
 resonance, Acoustic research, Border-crossing listening
 
+
 {% picture jpt-webp  "projects/bendir2.jpg" --link {{ page.external_link }} %}
+
 
 ## Aims and Objectives
 - To highlight shared sonic lineages between Morocco and Spain using specific traditional
@@ -53,6 +57,7 @@ romanticism.
 - To document and circulate underrepresented acoustic traditions in a contemporary
 setting.
 
+
 ## Methodology
 - Sound-based research focused on archival recordings, cassettes, vinyl, and field recordings
 from rural regions in Morocco and Spain.
@@ -60,6 +65,7 @@ from rural regions in Morocco and Spain.
 of correspondence between instruments, tonalities, and performance contexts.
 - Instrument-focused curation, highlighting the evolution of similar tools (bendir/pandero,
 ghayta/gaita, ribab/rabel) in different sonic ecosystems.
+
 
 ## Artistic Relevance
 This project proposes an alternative way of listening to Western Mediterranean heritage — not
