@@ -301,3 +301,128 @@ swiper-slide img {
 .project-footer a:hover {
   color: #b7b7b7;
 }
+
+
+
+
+/* player */
+.player {
+  position: fixed; /* Keep it fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the element */
+  display: flex; /* Maintain horizontal layout */
+  align-items: center; /* Vertically align items in the flex container */
+  justify-content: space-between; /* Center content horizontally */
+  background: #ffffff;
+  color: #444444b3;
+  border-radius: 10px; /* More noticeable rounded corners */
+  padding: 15px 2px; /* Increase horizontal padding for width */
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 600px; /* Set a minimum width for better visibility */
+}
+
+.player > div {
+  vertical-align: middle;
+  display: inline-block; /* Keep elements in a row */
+  line-height: 1.4;
+  margin-right: 100px; /* Add spacing between elements */
+}
+
+.player > div:last-child {
+  margin-right: 0; /* Remove margin from the last element */
+}
+
+.player .fa {
+  transition: .2s;
+  color: #444444b3;
+  font-size: 1.8em; /* Increase icon size */
+}
+
+.player .fa:hover {
+  color: #444;
+}
+
+.player input {
+  display: none;
+}
+
+.player .amplitude-play-pause {
+  position: relative;
+  display: inline-block;
+  margin: 0 30px; /* Add horizontal margin */
+  cursor: pointer;
+  width: auto;
+  font-size: 2.5em; /* Increase play/pause button size */
+}
+
+.player .amplitude-play-pause:before {
+  content: "\f04b"; /* Play icon */
+}
+
+.player .amplitude-playing:before {
+  content: "\f04c"; /* Pause icon */
+}
+
+.player .volumectl {
+  margin-right: 20px; /* Add right margin for spacing */
+  float: none; /* Reset float */
+  display: flex;
+  align-items: center;
+}
+
+.player .volumectl > span {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.player .volumectl .volumeicon {
+  width: auto;
+  font-size: 1.3em; /* Increase volume icon size */
+  cursor: pointer;
+}
+
+.player .volumectl .volumeicon:hover {
+  color: black;
+}
+
+.player .volumectl .indicator {
+  display: inline-block; /* Keep indicator horizontal */
+  text-align: center;
+  font-size: 0.9em; /* Adjust indicator font size */
+  font-family: courier;
+  opacity: 0;
+  transition: .4s;
+  margin-left: 5px; /* Add some space for the indicator */
+}
+
+.player .volumectl .fa:hover ~ .indicator {
+  opacity: 1;
+}
+
+.player .volumectl .amplitude-volume-up,
+.player .volumectl .amplitude-volume-down {
+  cursor: pointer;
+  font-size: 1.3em; /* Increase volume up/down icon size */
+}
+
+.player .data {
+  display: inline-block; /* Keep data horizontal */
+  text-align: left; /* Align text to the left within its space */
+}
+
+.player .data span {
+  display: block;
+  margin-bottom: 2px;
+  width: auto; /* Adjust width based on content */
+}
+
+.player .data .title {
+  font-weight: bold;
+  font-size: 1.1em; /* Slightly increase title size */
+}
+
+.player .data .listeners::after {
+  content: ' oyentes';
+}

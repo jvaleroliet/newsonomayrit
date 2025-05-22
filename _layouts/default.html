@@ -6,9 +6,11 @@
     <title>Sono Mayrit</title>
     <link href="{{ "/css/styles.css" | relative_url }}" rel="stylesheet">
     <script src="{{ "/scripts/script.js" | relative_url }}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
     <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.bundle.js"></script>
 </head>
 
@@ -16,19 +18,27 @@
 	
 	{% include nav.html %}
   
-  <div class="minimal-audio-player">
-    <audio id="minimal-player" src="{{ "/audio/test.mp3" | relative_url }}" loop></audio>
-    <button id="play-pause-button">▶</button>
-  </div>
 
 	{% include menu.html %}
 
-	{{ content }}
 	
+  {{ content }}
+  {% assign audio_url = site.url | append: "/audio/test.mp3" %}
+	<!-- {% include player.html url=audio_url title="Listen" desc="Sounds" %} -->
 	{% include footer.html %}
 
 	{% include script_opening.html %}
-
-
+  <script>
+    Amplitude.init({
+      songs: [
+        {
+          url: '/audio/test.mp3', // Make sure this path is correct
+          title: 'My Awesome Song',
+          artist: 'The Great Artist'
+        }
+      ]
+    });
+  </script>
   </body>
 </html>
+
